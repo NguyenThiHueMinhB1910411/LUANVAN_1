@@ -15,6 +15,10 @@ import PhysicalExamination from '@/views/Service/PhysicalExamination/PhysicalExa
 // admin
 import Admin from '@/views/Admin/Admin.vue';
 import DashBoard from '@/views/Admin/DashBoard.vue';
+import HRM from '@/views/Admin/HRM.vue';
+
+//STAFF
+import Staff from '@/views/Staff/Staff.vue'
 
 
 const routes = [
@@ -77,23 +81,16 @@ const routes = [
   },
 
 
-  // admin
-  // {
-  //   path: '/Admin',
-  //   name: 'Admin',
-  //   component: Admin,
-  //   children : [
-  //    {
-  //     path: 'con',
-  //     name: 'con',
-  //     component: PhysicalExamination,
-  //    }
-  //   ]
-  // },
+  // ADMIN
   {
     path: '/dashboard',
     name: 'DashBoard',
     component: DashBoard,
+  },
+  {
+    path: '/hrm',
+    name: 'HRM',
+    component: HRM,
   },
 
 
@@ -106,9 +103,32 @@ const routes = [
       path: 'dashboard',
       name: 'DashBoard',
       component: () => import("@/views/Admin/DashBoard.vue"),
+     },
+     {
+      path: 'hrm',
+      name: 'HRM',
+      component: () => import("@/views/Admin/HRM.vue"),
      }
     ]
   },
+
+  //STAFF
+  {
+    path: '/staff',
+    name: 'Staff',
+    component: Staff,
+    children : [
+     {
+      path: 'Examinated',
+      name: 'Examinated',
+      component: () => import("@/views/Staff/Examinated.vue"),
+     },
+    
+    ]
+  },
+
+
+
 
   {
     path: "/:pathMatch(.*)*",

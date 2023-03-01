@@ -29,7 +29,7 @@ library.add(
     <div class="pt-4 ms-3">
         <a class="" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
 
-            <h4 class="text-uppercase">ADMIN</h4>
+            <h4 class="text-uppercase">STAFF</h4>
         </a>
     </div>
     <hr>
@@ -37,7 +37,7 @@ library.add(
         <p>
             <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                 <font-awesome-icon icon="fa-solid fa-user" />
-            <span class="ms-3">Quản tài khoản </span>
+            <span class="ms-3">Quản lý </span>
             <font-awesome-icon icon="fa-solid fa-arrow-down " class="ms-1"  />
             </a>
         </p>
@@ -52,28 +52,29 @@ library.add(
         </div>
 
     </div>
-
-    <!-- <div class=" ms-3 pb-4">
+    <div class=" ms-3 pb-4">
         <a class="" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
-            <font-awesome-icon icon="fa-solid fa-user" />
-            <span class="ms-3">Quản tài khoản</span>
-
+            <font-awesome-icon icon="fa-solid fa-users" />
+            <span class="ms-3">Duyệt yêu cầu</span>
         </a>
-    </div> -->
+    </div>
 
     <div class=" ms-3 pb-4">
         <a class="" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
             <font-awesome-icon icon="fa-solid fa-users" />
-            <span class="ms-3">Quản nhân sự</span>
+            <span class="ms-3">Lịch bác sĩ</span>
         </a>
     </div>
     <div class=" ms-3 pb-4">
-        <!-- <a href="#"><i class="fas fa-cog fs-5 me-3"></i>Cài Đặt</a> -->
-        <a class="" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <!-- <p class="" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
             <font-awesome-icon icon="fa-solid fa-dog" />
-            <span class="ms-3">Quản lý thú y</span>
+            <span class="ms-3">Đã khám trong ngày</span>
 
-        </a>
+        </p> -->
+
+        <router-link :to="{ name: 'Examinated' }" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <font-awesome-icon icon="fa-solid fa-dog" />
+            Đã khám trong ngày</router-link>
     </div>
     <hr>
     <div class=" ms-4">
