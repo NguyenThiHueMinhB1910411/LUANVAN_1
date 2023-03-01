@@ -37,18 +37,21 @@ library.add(
         <p>
             <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                 <font-awesome-icon icon="fa-solid fa-user" />
-            <span class="ms-3">Quản lý </span>
+            <span class="ms-3">Dịch vụ </span>
             <font-awesome-icon icon="fa-solid fa-arrow-down " class="ms-1"  />
             </a>
         </p>
         <div class="collapse" id="collapseExample">
-            <div class="ms-4">Nhân viên
+            <div class="ms-4">Làm đẹp
                 
             </div>
-            <div class="pt-3 ms-4">Bác sĩ
+            <div class="pt-3 ms-4">Nội trú
             </div>
-            <div class="pt-3 ms-4 pb-3">Khách hàng
-            </div>
+
+            
+            <router-link :to="{ name: 'Check' }" class="pt-5 ms-4 pb-3"> Khám bệnh</router-link>
+            <!-- <div class="pt-3 ms-4 pb-3">Khám bệnh
+            </div> -->
         </div>
 
     </div>
@@ -60,25 +63,19 @@ library.add(
     </div>
 
     <div class=" ms-3 pb-4">
-        <a class="" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+   
+        <router-link :to="{ name: 'DoctorCalenadar' }" >
             <font-awesome-icon icon="fa-solid fa-users" />
-            <span class="ms-3">Lịch bác sĩ</span>
-        </a>
+            Lịch bác sĩ</router-link>
     </div>
     <div class=" ms-3 pb-4">
-        <!-- <p class="" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
-            <font-awesome-icon icon="fa-solid fa-dog" />
-            <span class="ms-3">Đã khám trong ngày</span>
 
-        </p> -->
-
-        <router-link :to="{ name: 'Examinated' }" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <router-link :to="{ name: 'Examinated' }" >
             <font-awesome-icon icon="fa-solid fa-dog" />
             Đã khám trong ngày</router-link>
     </div>
     <hr>
     <div class=" ms-4">
-        <!-- <a href="#"><i class="fas fa-cog fs-5 me-3"></i>Cài Đặt</a> -->
         <a class="" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
             <font-awesome-icon icon="fa-solid fa-gear" />
             Cài đặt

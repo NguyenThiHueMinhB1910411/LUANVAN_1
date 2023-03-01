@@ -11,6 +11,7 @@ library.add(faMoneyBill, faCreditCard, faPrint, faUser);
 </script>
 <template>
   <main>
+    <h1>CHECK</h1>
     <div>
       <div class="row">
         <div class="">

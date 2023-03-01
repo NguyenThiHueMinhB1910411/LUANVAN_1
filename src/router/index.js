@@ -18,7 +18,9 @@ import DashBoard from '@/views/Admin/DashBoard.vue';
 import HRM from '@/views/Admin/HRM.vue';
 
 //STAFF
-import Staff from '@/views/Staff/Staff.vue'
+import Staff from '@/views/Staff/Staff.vue';
+// import DoctorCalenadar from '@/views/Staff/DoctorCalenadar.vue';
+
 
 
 const routes = [
@@ -122,6 +124,16 @@ const routes = [
       path: 'Examinated',
       name: 'Examinated',
       component: () => import("@/views/Staff/Examinated.vue"),
+     },
+     {
+      path: 'DoctorCalenadar',
+      name: 'DoctorCalenadar',
+      component: () => import("@/views/Staff/DoctorCalenadar.vue"),
+     },
+     {
+      path: 'Check',
+      name: 'Check',
+      component: () => import("@/views/Staff/Check.vue"),
      },
     
     ]
