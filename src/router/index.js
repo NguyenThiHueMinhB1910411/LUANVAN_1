@@ -14,6 +14,7 @@ import HotelRoom from '@/views/Service/HotelRoom/HotelRoom.vue';
 import PhysicalExamination from '@/views/Service/PhysicalExamination/PhysicalExamination.vue';
 // admin
 import Admin from '@/views/Admin/Admin.vue';
+import DashBoard from '@/views/Admin/DashBoard.vue';
 
 
 const routes = [
@@ -77,18 +78,38 @@ const routes = [
 
 
   // admin
+  // {
+  //   path: '/Admin',
+  //   name: 'Admin',
+  //   component: Admin,
+  //   children : [
+  //    {
+  //     path: 'con',
+  //     name: 'con',
+  //     component: PhysicalExamination,
+  //    }
+  //   ]
+  // },
+  {
+    path: '/dashboard',
+    name: 'DashBoard',
+    component: DashBoard,
+  },
+
+
   {
     path: '/Admin',
     name: 'Admin',
     component: Admin,
     children : [
      {
-      path: 'con',
-      name: 'con',
-      component: PhysicalExamination,
+      path: 'dashboard',
+      name: 'DashBoard',
+      component: () => import("@/views/Admin/DashBoard.vue"),
      }
     ]
   },
+
   {
     path: "/:pathMatch(.*)*",
     name: "notfound",

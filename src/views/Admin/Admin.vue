@@ -5,14 +5,19 @@ export default {
     components: {
         SidebarAdmin,
         HeaderAdmin,
+
     },
 };
 </script>
 
 <template>
-    <HeaderAdmin/>
-    <SidebarAdmin/>
-    <main>
+<HeaderAdmin />
+<div class="row">
+    <SidebarAdmin class="col-3" />
 
-    </main>
+    <router-view class="col-9">
+
+    </router-view>
+
+</div>
 </template>
