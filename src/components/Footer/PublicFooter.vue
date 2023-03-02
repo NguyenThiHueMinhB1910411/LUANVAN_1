@@ -9,7 +9,7 @@
             chương trình khuyến mãi của Paddy
           </p>
           <div class="d-flex flex-row">
-            <input
+            <input class="pl-4"
               style="height: 50px"
               type="email"
               placeholder="Email của bạn"

@@ -111,7 +111,7 @@ export default {
                 </div>
                 <div class="col-4">
                     <h2 class="aboutus text-center pt-4 pb-2">VỀ CHÚNG TÔI</h2>
-                    <p class="text-center fw-bold mt-2" style="font-size: 30px; font-weight: bold">
+                    <p class="text-center fw-bold mt-2" style="font-size: 22px; font-weight: bold">
                         BÁC SĨ ĐỘNG VẬT QUỐC TẾ
                     </p>
                     <div class="px-2">

@@ -13,98 +13,108 @@ library.add(faMoneyBill, faCreditCard, faPrint, faUser);
   <main>
     <div>
       <div class="row">
-        <div class="">
-          <div class="">
-            <div class="pt-5">
-              <div class="row">
-                <div>
-                  <div class="dropdown col">
-                    <a
-                      class="btn btn-primary dropdown-toggle px-4 border border-light"
-                      href="#"
-                      role="button"
-                      id="dropdownMenuLink"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Xem
-                    </a>
+        <div class="pt-5">
+          <button class="bg bg-primary px-3 py-1 "   style="text-decoration: none; border: 1px solid  white ; border-radius: 10px;">
+            <router-link :to="{ name: 'ListDoctors' }" class="text-light"  style="text-decoration: none;">
+            Thêm lịch</router-link
+          ></button>
+          
 
-                    <ul
-                      class="dropdown-menu"
-                      aria-labelledby="dropdownMenuLink"
-                    >
-                      <li><a class="dropdown-item" href="#">Bác sĩ</a></li>
-                      <li><a class="dropdown-item" href="#">Nhân viên</a></li>
-                      <li><a class="dropdown-item" href="#">Khách hàng</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+          <!-- <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Thêm lịch
+          </button> -->
 
-              <div class="row mt-4">
-                <table
-                  class="table table-hover text-center table-bordered table table-bordered"
-                  style="font-size: 15px"
-                >
-                  <thead class="">
-                    <tr class="text-danger">
-                      <th>Mã bác sĩ</th>
-                      <th>Tên Bác sĩ</th>
-                      <th>Ảnh</th>
-                      <th>Tên dịch vụ</th>
-                      <th>Loại vật nuôi</th>
-                      <th>Chi tiết lịch khám</th>
-                    </tr>
-                  </thead>
-                  <tbody class="text-left">
-                    <tr>
-                      <td>01</td>
-                      <td>Nguyễn Văn An</td>
-                      <td>
-                        <img
-                          src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" style="width: 40px !important;"
-                          class="avatar"
-                          alt=""
-                        />
-                      </td>
-                      <td>Tiêm phòng</td>
-                      <td>Mèo</td>
-                      <td><button class="btn btn-primary text-light">Chi tiết lịch khám</button></td>
-                    </tr>
-                    <tr>
-                      <td>01</td>
-                      <td>Nguyễn Văn An</td>
-                      <td>
-                        <img
-                          src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" style="width: 40px !important;"
-                          class="avatar"
-                          alt=""
-                        />
-                      </td>
-                      <td>Tiêm phòng</td>
-                      <td>Mèo</td>
-                      <td><button class="btn btn-primary text-light">Chi tiết lịch khám</button></td>
-                    </tr>
-                    <tr>
-                      <td>01</td>
-                      <td>Nguyễn Văn An</td>
-                      <td>
-                        <img
-                          src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" style="width: 40px !important;"
-                          class="avatar"
-                          alt=""
-                        />
-                      </td>
-                      <td>Tiêm phòng</td>
-                      <td>Mèo</td>
-                      <td><button class="btn btn-primary text-light">Chi tiết lịch khám</button></td>
-                    </tr>
-                 
-                    
-                  </tbody>
-                </table>
-              </div>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+           
+          </div>
+
+          <div class="pt-2">
+            <div class="row">
+              <table
+                class="table table-hover text-center table-bordered table table-bordered"
+                style="font-size: 15px"
+              >
+                <thead class="">
+                  <tr class="text-danger">
+                    <th>Mã bác sĩ</th>
+                    <th>Tên Bác sĩ</th>
+                    <th>Ảnh</th>
+                    <th>Tên dịch vụ</th>
+                    <th>Loại vật nuôi</th>
+                    <th>Chi tiết lịch khám</th>
+                  </tr>
+                </thead>
+                <tbody class="text-left">
+                  <tr>
+                    <td>01</td>
+                    <td>Nguyễn Văn An</td>
+                    <td>
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                        style="width: 40px !important"
+                        class="avatar"
+                        alt=""
+                      />
+                    </td>
+                    <td>Tiêm phòng</td>
+                    <td>Mèo</td>
+                    <td>
+                      <button class="btn btn-primary text-light">
+                        Chi tiết lịch khám
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>01</td>
+                    <td>Nguyễn Văn An</td>
+                    <td>
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                        style="width: 40px !important"
+                        class="avatar"
+                        alt=""
+                      />
+                    </td>
+                    <td>Tiêm phòng</td>
+                    <td>Mèo</td>
+                    <td>
+                      <button class="btn btn-primary text-light">
+                        Chi tiết lịch khám
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>01</td>
+                    <td>Nguyễn Văn An</td>
+                    <td>
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                        style="width: 40px !important"
+                        class="avatar"
+                        alt=""
+                      />
+                    </td>
+                    <td>Tiêm phòng</td>
+                    <td>Mèo</td>
+                    <td>
+                      <button class="btn btn-primary text-light">
+                        Chi tiết lịch khám
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -113,10 +123,11 @@ library.add(faMoneyBill, faCreditCard, faPrint, faUser);
   </main>
 </template>
 
-<!-- <style scoped>
-</style> -->
-<!-- <style>
-.avatar {
-    width: 40px !important;
-}
+<!-- 
+<style scoped>
+</style>
+<style>
+ < !-- .avatar {
+     width: 40px !important;
+ }
 </style> -->

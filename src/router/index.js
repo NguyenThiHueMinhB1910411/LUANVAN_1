@@ -135,6 +135,11 @@ const routes = [
       name: 'Check',
       component: () => import("@/views/Staff/Check.vue"),
      },
+     {
+      path: 'ListDoctors',
+      name: 'ListDoctors',
+      component: () => import("@/views/Staff/ListDoctors.vue"),
+     },
     
     ]
   },
