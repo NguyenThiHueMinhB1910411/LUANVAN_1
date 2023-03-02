@@ -1,8 +1,15 @@
 <script>
-
+import PublicFooters from "@/components/Footer/PublicFooter.vue";
+import HeaderPublic from "@/components/Header/PublicHeader.vue"
+export default {
+  components: {
+    PublicFooters,
+    HeaderPublic
+  },
+};
 </script>
 <template>
-
+<HeaderPublic />
 <main>
     <div class="d-flex justify-content-center container">
         <div class="m-1 p-2 ">
@@ -242,7 +249,7 @@ Nói sơ về tình trạng bệnh...
         </div>
     </div>
 </main>
-
+<PublicFooters />
 </template>
 
 <style scoped>

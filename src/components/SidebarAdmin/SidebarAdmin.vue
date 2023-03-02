@@ -38,7 +38,7 @@ library.add(
             <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                 <font-awesome-icon icon="fa-solid fa-user" />
             <span class="ms-3">Quản tài khoản </span>
-            <font-awesome-icon icon="fa-solid fa-arrow-down " class="ms-1"  />
+            <font-awesome-icon icon="fa-solid fa-arrow-down " class="px-2"  />
             </a>
         </p>
         <div class="collapse" id="collapseExample">
@@ -62,16 +62,23 @@ library.add(
     </div> -->
 
     <div class=" ms-3 pb-4">
-        <a class="" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
-            <font-awesome-icon icon="fa-solid fa-users" />
-            <span class="ms-3">Quản nhân sự</span>
-        </a>
+        <router-link :to="{ name: 'HRM' }">
+        <font-awesome-icon icon="fa-solid fa-users" class="px-2" />
+        Quản lý nhân sự</router-link
+      >
+        
+
+        
+        <!-- <a class="" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <font-awesome-icon icon="fa-solid fa-users" class="px-2" />
+            <span class="px-2">Quản lý nhân sự</span>
+        </a> -->
     </div>
     <div class=" ms-3 pb-4">
         <!-- <a href="#"><i class="fas fa-cog fs-5 me-3"></i>Cài Đặt</a> -->
         <a class="" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
-            <font-awesome-icon icon="fa-solid fa-dog" />
-            <span class="ms-3">Quản lý thú y</span>
+            <font-awesome-icon icon="fa-solid fa-dog" class="px-2" />
+            <span class="px-2">Quản lý thú y</span>
 
         </a>
     </div>
@@ -79,7 +86,7 @@ library.add(
     <div class=" ms-4">
         <!-- <a href="#"><i class="fas fa-cog fs-5 me-3"></i>Cài Đặt</a> -->
         <a class="" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
-            <font-awesome-icon icon="fa-solid fa-gear" />
+            <font-awesome-icon icon="fa-solid fa-gear" class="px-2" />
             Cài đặt
         </a>
     </div>
