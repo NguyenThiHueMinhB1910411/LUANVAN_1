@@ -9,9 +9,10 @@ import {
   faDog,
   faArrowDown,
   faCalendarCheck,
+  faCalendarDay,
 } from "@fortawesome/free-solid-svg-icons";
 library.add(faHouse, faGear, faUser, faUsers, faDog,
- faArrowDown,faCalendarCheck,);
+ faArrowDown,faCalendarCheck, faCalendarDay,)
 </script>
 
 <template>
@@ -43,6 +44,12 @@ library.add(faHouse, faGear, faUser, faUsers, faDog,
       <router-link :to="{ name: 'DoctorCalenadar' }">
         <font-awesome-icon icon="fa-solid fa-users" class="px-2" />
         Lịch bác sĩ</router-link
+      >
+    </div>
+    <div class="ms-4 pb-4">
+      <router-link :to="{ name: 'Booked' }">
+        <font-awesome-icon icon="fa-solid fa-calendar-days" class="px-2" />
+        Lịch đã book</router-link
       >
     </div>
     <div class="ms-4 pb-4">

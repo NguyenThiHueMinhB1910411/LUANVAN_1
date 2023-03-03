@@ -19,7 +19,6 @@ import HRM from '@/views/Admin/HRM.vue';
 
 //STAFF
 import Staff from '@/views/Staff/Staff.vue';
-// import DoctorCalenadar from '@/views/Staff/DoctorCalenadar.vue';
 
 
 
@@ -110,6 +109,11 @@ const routes = [
       path: 'hrm',
       name: 'HRM',
       component: () => import("@/views/Admin/HRM.vue"),
+     },
+     {
+      path: 'addPerson',
+      name: 'AddPerson',
+      component: () => import("@/views/Admin/AddPerson.vue"),
      }
     ]
   },
@@ -120,11 +124,14 @@ const routes = [
     name: 'Staff',
     component: Staff,
     children : [
+      //trang xem các lịch trình đã khám
+      //trang xác nhận 
      {
       path: 'Examinated',
       name: 'Examinated',
       component: () => import("@/views/Staff/Examinated.vue"),
      },
+     //Trang lịch trình bác sĩ
      {
       path: 'DoctorCalenadar',
       name: 'DoctorCalenadar',
@@ -135,10 +142,17 @@ const routes = [
       name: 'Confirm',
       component: () => import("@/views/Staff/Confirm.vue"),
      },
+     //Trang ds bác sĩ
      {
       path: 'ListDoctors',
       name: 'ListDoctors',
       component: () => import("@/views/Staff/ListDoctors.vue"),
+     },
+     //Nhân viên xem các lịch đã được book trực tuyến
+     {
+      path: 'Booked',
+      name: 'Booked',
+      component: () => import("@/views/Staff/Booked.vue"),
      },
     
     ]

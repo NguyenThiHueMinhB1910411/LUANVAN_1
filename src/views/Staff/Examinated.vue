@@ -51,6 +51,7 @@ library.add(faMoneyBill, faCreditCard, faPrint, faUser);
                     <tr class="text-danger">
                       <th>Mã KH</th>
                       <th>Tên KH</th>
+                      <!-- <th>Tên dịch vụ</th> -->
                       <th>SĐT</th>
                       <th>Tên NV/BS</th>
                       <th>Ngày khám</th>
@@ -64,6 +65,7 @@ library.add(faMoneyBill, faCreditCard, faPrint, faUser);
                     <tr>
                       <td>01</td>
                       <td>Phạm Văn An</td>
+                      <!-- <td>Khám bệnh</td> -->
                       <td>0389943552</td>
                       <td>Trần Cao</td>
                       <td>29-1-2023</td>
@@ -71,7 +73,7 @@ library.add(faMoneyBill, faCreditCard, faPrint, faUser);
                       <td>Chưa thanh toán</td>
                       <td>250000 VND</td>
                       <td>
-                        <button class="btn btn-success" style="font-size: 14px" type="button"
+                        <button class="btn btn-success w-100"  type="button"
                         
                           data-bs-toggle="modal"
                           data-bs-target="#exampleModal">
@@ -101,6 +103,7 @@ library.add(faMoneyBill, faCreditCard, faPrint, faUser);
                                   aria-label="Close"
                                 ></button>
                               </div>
+                              <!-- modal thanh toán -->
                               <div class="modal-body">
                                 <table>
                                     <tr>
@@ -112,18 +115,7 @@ library.add(faMoneyBill, faCreditCard, faPrint, faUser);
                                         <td><input type="text"  class="form-control"></td>
                                     </tr>
                                 </table>
-                                <!-- <form action="">
-                                    <div class="">
-                                        <span> Số tiền cần thanh toán</span>
-                                       
-                                        <input type="text">
-                                    </div>
-                                    <div class="">
-                                        <span>Tiền nhận được</span>
-                                        <input type="text">
-                                    </div>
-                                  
-                                </form> -->
+                             
                               </div>
                               <div class="modal-footer">
                                 <button
@@ -145,6 +137,7 @@ library.add(faMoneyBill, faCreditCard, faPrint, faUser);
                     <tr>
                       <td>01</td>
                       <td>Phạm Văn An</td>
+                      <!-- <td>Làm đẹp</td> -->
                       <td>0389943552</td>
                       <td>Trần Cao</td>
                       <td>29-1-2023</td>
@@ -153,8 +146,8 @@ library.add(faMoneyBill, faCreditCard, faPrint, faUser);
                       <td>250000 VND</td>
                       <td>
                         <button
-                          class="btn btn-danger px-5"
-                          style="font-size: 14px"
+                          class="btn btn-danger  w-100"
+                          style="font-size: 13x"
                         >
                           <font-awesome-icon icon="fa-solid fa-print" />
                           In
@@ -164,6 +157,7 @@ library.add(faMoneyBill, faCreditCard, faPrint, faUser);
                     <tr>
                       <td>01</td>
                       <td>Phạm Văn An</td>
+                      <!-- <td>Nội trú</td> -->
                       <td>0389943552</td>
                       <td>Trần Cao</td>
                       <td>29-1-2023</td>
@@ -172,8 +166,8 @@ library.add(faMoneyBill, faCreditCard, faPrint, faUser);
                       <td>250000 VND</td>
                       <td>
                         <button
-                          class="btn btn-danger px-5"
-                          style="font-size: 14px"
+                          class="btn btn-danger w-100"
+                          style="font-size: 13x"
                         >
                           <font-awesome-icon icon="fa-solid fa-print" /> In
                         </button>
@@ -190,4 +184,5 @@ library.add(faMoneyBill, faCreditCard, faPrint, faUser);
   </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>

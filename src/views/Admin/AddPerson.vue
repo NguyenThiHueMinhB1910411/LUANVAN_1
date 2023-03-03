@@ -16,7 +16,7 @@ library.add(faMoneyBill, faCreditCard, faPrint, faUser, faCalendarDays);
       <div class="row">
         <div>
           <h4 class="text-dark text-center text-uppercase fs-700 py-4">
-            Thêm bác sĩ vào lịch khám
+            Thêm nhân sự
           </h4>
         </div>
         <table

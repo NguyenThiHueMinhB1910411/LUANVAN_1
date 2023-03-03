@@ -50,7 +50,7 @@ library.add(faMoneyBill, faCreditCard, faPrint, faUser);
                     <th>Mã bác sĩ</th>
                     <th>Tên Bác sĩ</th>
                     <th>Ảnh</th>
-                    <th>Tên dịch vụ</th>
+                 
                     <th>Loại vật nuôi</th>
                     <th>Chi tiết lịch khám</th>
                   </tr>
@@ -75,44 +75,8 @@ library.add(faMoneyBill, faCreditCard, faPrint, faUser);
                       </button>
                     </td>
                   </tr>
-                  <tr>
-                    <td>01</td>
-                    <td>Nguyễn Văn An</td>
-                    <td>
-                      <img
-                        src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
-                        style="width: 40px !important"
-                        class="avatar"
-                        alt=""
-                      />
-                    </td>
-                    <td>Tiêm phòng</td>
-                    <td>Mèo</td>
-                    <td>
-                      <button class="btn btn-primary text-light">
-                        Chi tiết lịch khám
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>01</td>
-                    <td>Nguyễn Văn An</td>
-                    <td>
-                      <img
-                        src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
-                        style="width: 40px !important"
-                        class="avatar"
-                        alt=""
-                      />
-                    </td>
-                    <td>Tiêm phòng</td>
-                    <td>Mèo</td>
-                    <td>
-                      <button class="btn btn-primary text-light">
-                        Chi tiết lịch khám
-                      </button>
-                    </td>
-                  </tr>
+              
+                  
                 </tbody>
               </table>
             </div>
